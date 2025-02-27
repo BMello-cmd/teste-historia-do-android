@@ -1,0 +1,118 @@
+@charset "UTF-8";
+@font-face {
+    font-family: android;
+    src: url('fonts/idroid.otf') format('opentype');
+}
+
+
+:root {
+    --cor01: rgb(165, 211, 198);
+    --cor02: rgb(12, 116, 64);
+    --cor03: rgb(35, 172, 126);
+    --cor04: rgba(0, 0, 0, 0.664);
+    --cor05: rgb(5, 44, 25);
+    --font-padrao: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+    --font-android: 'android';
+}
+
+body{
+    background-color: var(--cor01);
+    font-family: var(--font-padrao);
+margin: 1% 20% 5% 20%;
+}
+
+nav{
+    text-align: left;
+    background-image: linear-gradient(to bottom, var(--cor03) 5%, var(--cor02)); 
+    padding: 10px;
+    border-bottom-right-radius: 5px;
+    border-bottom-left-radius: 5px;
+    margin: auto;
+    text-shadow: 2px, 2px, 0px, rgba(0, 0, 0, 0.233);
+}
+
+nav > a{
+    color: black;
+    padding: 10px;
+    text-decoration: none;
+}
+
+nav > a:hover{
+    background: rgba(184, 184, 184, 0.87);
+    color: var(--cor04);
+    border-radius: 5px;
+    transition-duration: .5s;
+}
+
+header h1{
+    color: var(--cor05);
+    font-weight: bold;
+}
+
+header h2{
+    color: var(--cor05);
+    font-weight: bold;
+}
+
+main h1{
+    color: var(--cor02);
+    font-weight: bold;
+}
+
+main h2{
+    color: var(--cor02);
+    font-weight: bold;
+}
+
+aside h3{
+    font-size: 30px;
+    color: var(--cor02);
+    font-weight: bold;
+}
+
+.cabecalho{
+    background-color: rgb(35, 172, 126);
+    padding: 5px;
+    border-top-right-radius: 5px;
+    border-top-left-radius: 5px;
+    text-align: center;
+    font-family: var(--font-android);
+}
+
+.cabecalho .titulo{
+
+    align-items: center;
+}
+
+main{
+    text-align: justify;
+    background-color: aliceblue;
+    padding: 20px;
+    margin: 20px;
+    border-radius: 10px;
+    box-shadow: 1px 1px 4px 4px rgba(0, 0, 0, 0.233);
+    
+}
+
+aside{
+    text-align: justify;
+    background-color: aliceblue;
+    padding: 20px;
+    margin: 20px;
+    border-radius: 10px;
+    box-shadow: 10px, 10px, 10px, 10px rgba(5, 0, 0, 0.712);
+}
+
+main img{
+    margin: auto;
+    width: 50%;
+    padding: 20px;
+    display: flex;
+    justify-content: center;
+}
+
+iframe{
+    display: block;
+    margin: auto;
+    width: 50%;
+}
